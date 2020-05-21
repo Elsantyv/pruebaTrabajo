@@ -167,9 +167,19 @@ img {
     font-size: 3rem;
 }
 
+.menu .menuMobilWeb {
+    display: none;
+}
+
 @media(min-width:768px) {
     .iconoMobil {
         display: none;
+    }
+    .menu .menuMobilOff {
+        display: none;
+    }
+    .menu .menuMobilWeb {
+        display: flex;
     }
     .menu {
         flex-direction: row;
@@ -493,7 +503,7 @@ section nav a {
 @media(min-width:768px) {
     .boxRecursos {
         flex-direction: row;
-        align-items: center;
+        justify-content: center;
     }
     .boxR:nth-of-type(1) {
         border-radius: 10px 0 0 10px / 10px 10px;
@@ -605,4 +615,35 @@ section nav a {
     .copy {
         text-align: start;
     }
+}
+
+
+/*SocialMedia*/
+
+.socialMedia-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -100px;
+    top: 340px;
+    width: 210px;
+    z-index: 1100;
+}
+
+.socialMedia li {
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 23px 0px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.socialMedia li:hover {
+    margin-left: -10px;
+}
+
+.socialMedia li img {
+    float: left;
+    margin: 5px 4px;
+    margin-right: 5px;
 }

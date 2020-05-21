@@ -5,26 +5,18 @@ $(document).ready(function() {
     let vanS = 0;
     let sw = 0;
 
-    if ($(window).width() <= 767) {
-
-        $(".menuMobilOff").hide();
-
-    }
-
-
-
     $("#menuMobil").click(function(evento) {
 
         if (sw === 1) {
 
-            $(".menuMobilOff").show(1000);
+            $(".menuMobilOff").slideToggle(1000);
 
             sw = 0;
 
         } else {
 
             sw = 1;
-            $(".menuMobilOff").hide(1000);
+            $(".menuMobilOff").slideToggle(1000);
 
         }
 
